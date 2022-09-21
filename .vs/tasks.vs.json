@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "任务-22-杨森宇",
+      "appliesTo": "B组成员/22-杨森宇/",
+      "type": "launch"
+    }
+  ]
+}
