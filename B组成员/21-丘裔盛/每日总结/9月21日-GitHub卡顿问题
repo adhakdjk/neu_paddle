@@ -1,0 +1,14 @@
+1：通过改变host文件，可以通过火绒安全软件，修改host文件，在之中加入如下行
+
+# GitHub start
+
+
+140.82.113.3   github.com
+
+
+199.232.5.194    github.global.ssl.fastly.net
+
+
+# GitHub end
+
+2：可以通过下载watt toolkit的软件，这个软件里面除了可以通过脚本加速github，也可以加速其他外网的网址，stream也可以加速哦
