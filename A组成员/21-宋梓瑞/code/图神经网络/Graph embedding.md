@@ -63,9 +63,6 @@ $$\alpha_{pq}(t,x)=\begin{cases} 1\over p &\text{if d=0}\\ 1 &\text{if d=1}
 
 >d为顶点之间最短路径距离
 
-  - Return parameter,p
-参数 p p p控制重复访问刚刚访问过的顶点的概率。
-注意到 p p p仅作用于 d t x = 0 d_{tx}=0 dtx​=0的情况，而 d t x = 0 d_{tx}=0 dtx​=0表示顶点 x x x就是访问当前顶点 v v v之前刚刚访问过的顶点。
-那么若 p p p较高，则访问刚刚访问过的顶点的概率会变低，反之变高。
-- In-out papameter,q
-q q q控制着游走是向外还是向内，若q>1，随机游走倾向于访问和 t t t接近的顶点(偏向BFS)。若 q < 1 q<1 q<1，倾向于访问远离 t t t的顶点(偏向DFS)。
+
+![123](../images/node2ve.png)
+
