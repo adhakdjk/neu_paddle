@@ -1,0 +1,1 @@
+print('once start never stop')
