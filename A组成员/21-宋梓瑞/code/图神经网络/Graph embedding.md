@@ -66,3 +66,10 @@ $$\alpha_{pq}(t,x)=\begin{cases} 1\over p &\text{if d=0}\\ 1 &\text{if d=1}
 
 ![123](../images/node2ve.png)
 
+
+
+# struc2vec
+
+>这篇文章被东南硕士解释的太棒了，在此就不必赘述了
+
+直接上链接：[struc2vec](https://zhuanlan.zhihu.com/p/63175042)
