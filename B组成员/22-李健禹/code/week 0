@@ -1,1 +1,10 @@
 
+import datetime
+myyear = input("请输入您的出生年份")
+nowyear = datetime.datetime.now().year
+age = nowyear - int(myyear)
+print("您的年龄为",int(age),"岁")
+if age < 18:
+    print("未成年")
+else:
+    print("成年")   
