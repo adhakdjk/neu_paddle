@@ -1,3 +1,6 @@
+from ast import Num
+
+
 list1 = [1, 2, 3, 4, 5 ]
 list2 = ["a", "b", "c", "d","e","f"]
 list3 = ['physics', 'chemistry', 1997, 2000]
@@ -19,3 +22,8 @@ print(1!=2)
 
 list1 = [1,2,3,4]
 print(list1[2])
+
+number=1
+while number<10:
+    print(number)
+    number+=1

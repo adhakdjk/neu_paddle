@@ -88,7 +88,7 @@ dict：{"key":"value"}
 #### set
 set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。 使用大括号 { }
 
-### 循环
+### 判断
 #### 基本语句
 if xxx:
 else if xxx:
@@ -102,6 +102,30 @@ print(1<2)  //判断是否相等
 print(1>=2)  //判断是否相等
 print(1<=2)  //判断是否相等
 
+#### 逻辑运算符
+ not>and>or
+
+### 循环
+#### while
+while 条件 ：
+xxxxx
+xxxxx
+
+#### for
+for i in range(x) :
+for x in list1 :
+for letter in "hhhhh" :
+
+#### break
+跳出循环
+
+#### continue
+继续循环，跳过本轮
+
+#### pass
+占位，先让程序跑起来
+
+
 ## 问题总结
 
 ### 书写程序时，出现：输入法在英文状态下仍打出全角符号
@@ -109,10 +133,11 @@ print(1<=2)  //判断是否相等
 - 解决方案
 状态栏右侧 英-右键-全半角-选择半角 
 
+### 访问list中的元素
+AI STUDIO 可以直接 list[3] 执行
+VS 必须print("list[3]")
+
 ## 感悟(选填)
 
-- XX
-- XX
+-自己写起来还是有很多问题的，听课后要多实践
 
-## 成果展示
-> 内容包括: 个人搭建的博客链接 或CSDN原创文章链接。
