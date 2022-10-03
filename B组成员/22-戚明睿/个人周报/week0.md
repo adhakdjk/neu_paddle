@@ -1,4 +1,3 @@
-本周总结
 本周学习
 安装VSCODE并配置python环境
 安装Git并连接Github
