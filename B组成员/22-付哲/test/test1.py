@@ -1,5 +1,15 @@
-import numpy as np
-a=np.array([1,2,3,4,5,6,7,8])
-a=a.reshape(2,-1)
-print(a)
-print(a[:,-2])
+# var_str = 'Zhuge_Dan#Susan_Molina#Zhuge_Dan#Jennifer_Lee#Jerry_Davis#'
+# def solution(var_str):
+#     list=[]
+#     fenkai1=var_str.split('#')
+#     #print(fenkai1)
+#     for i in fenkai1:
+#         a=i.split()
+#         print(a)
+#         for b in a:
+#             print(b)
+
+
+# solution(var_str)
+from MyQR import myqr
+myqr.run('hello world')
