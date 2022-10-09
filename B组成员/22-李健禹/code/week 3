@@ -1,0 +1,23 @@
+class handlers(object):
+    def __init__(self , name , init_health , init_attack , alive = True):
+        self.name = name
+        self.health = init_health
+        self.attack = init_attack
+        self.alive = alive
+        print(self.birth)
+    def attack_enemy(self , enemy):
+        enemy.health -= self.attack
+        if enemy.health <= 0:
+            enemy.alive = False
+            enemy.health = 0
+            print(f"{enemy.name}丢人，给我退出战场")
+
+    def upgrade(self):
+        self.attack *= 1.1
+        self.health *= 1.1
+
+    def birth(self):
+        print(f"{self.name},前来报到，你就是刀客塔对吧")
+
+handler1 = handlers("蔓德拉" , 3000 , 9000)
+
