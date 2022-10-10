@@ -135,8 +135,8 @@ if xxx:
 状态栏右侧 英-右键-全半角-选择半角 
 
 ### 访问list中的元素
-- AI STUDIO 可以直接 list[3] 执行
-- VS 必须print("list[3]")
+- AI STUDIO(notebook) 可以直接 list[3] 执行
+- VS 必须print(list[3])
 
 ## 感悟(选填)
 
