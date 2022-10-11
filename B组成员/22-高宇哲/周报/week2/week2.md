@@ -2,7 +2,6 @@
 
 ## 本周学习
 
-
 - 课节2: Python编程基础
 
 ## 知识点总结
@@ -13,7 +12,7 @@
 ### 字符串进阶
 
 #### 字符串索引、切片
- 切片的语法：[起始:结束:步长] 字符串[start: end: step] 这三个参数都有默认值，默认截取方向是从左往右的 start:默认值为0，从0开始； end : 默认值未字符串结尾元素； step : 默认值为1；start在end左边
+- 切片的语法：[起始:结束:步长] 字符串[start: end: step] 这三个参数都有默认值，默认截取方向是从左往右的 start:默认值为0，从0开始； end : 默认值未字符串结尾元素； step : 默认值为1；start在end左边
 
  如果切片步长是负值，截取方向则是从右往左的，start从-1开始，start在end右边
 
@@ -61,9 +60,52 @@
  指定了 :s ，则只能传字符串值，如果传其他类型值不会自动转换
  当你不指定类型时，你传任何类型都能成功，如无特殊必要，可以不用指定类型
  eg.
- 'Hello, {name:}, 成绩提升了{score:.1f}分，百分比为 {percent:.1f}%'\
- .format(name='小明',  score=6, percent = 17.523)
+ 'Hello, {name:}, 成绩提升了{score:.1f}分，百分比为 {percent:.1f}%' .format(name='小明',  score=6, percent = 17.523)
 
 - 一种可读性更好的方法 f-string
- print(f"I am {name.capitalize()}.")
+ print(f"I am {name.capitalize()}.Height is {height:.3f}cm")
 
+### list 进阶
+#### list索引，切片
+list1[2]
+list1[2:5]
+
+#### list 常用函数
+- 添加新元素
+ list1.append("5")在末尾增加 5  list1.insert(2,"5")在第三个后面增加 5   list1.extend(list2) 把list1变为list1与list2之和（即合并1和2）
+
+- 计数和查找
+list1 = ['a','b','a','d','a','f']
+print(list1.count('a')) 查找a的个数
+print(list1.index('a')) 查找a的位置
+
+- 删除元素
+pop(x) x是list中的第x+1项
+remove(x) x是list中的元素
+
+### 列表生成式
+- 列表每一项加一
+[n+1 for n in list1]
+- 1-10之间所有数的平方 
+[(n+1)**2 for n in range(10)]
+- 1-10之间所有数的平方 构成的字符串列表
+[str((n+1)**2) for n in range(10)]
+
+- list1 = ['a','b','a','d','a','f']
+['app_%s'%n for n in list1]
+
+- list1 = ['a','b','a','d','a','f']
+[f'app_{n}' for n in list1]
+
+- 列表中的每一个偶数项[过滤]
+ [n for n in range(30) if n%2==0]
+
+- 小练习 在list_A 但是不在list_B中
+list_A = [1,3,6,7,32,65,12]
+list_B = [2,6,3,5,12]
+[i for i in list_A not in list_B]
+
+### 生成器
+
+## 问题总结
+- 列表生成式执行后不会改变原列表

@@ -35,3 +35,21 @@ hight = 170.4
 score_math = 95
 score_english = 89
 print(f"大家好！我叫{name}，我的身高是{hight:.3f} cm, 数学成绩{score_math}分,英语成绩{score_english}分")
+
+for a in list_string:
+    print('a'in a)
+
+list1 = ['a','b','a','d','a','f']
+print(list1.count('a')) 
+print(list1.index('a')) 
+
+
+list1 = ['a','b','a','d','a','f']
+print(['app_%s'%n for n in list1 ])
+
+
+list1 = ['a','b','a','d','a','f']
+[f'app_{n}' for n in list1 ]
+print(list1)
+
+print([n for n in range(30) if n%2==0])
