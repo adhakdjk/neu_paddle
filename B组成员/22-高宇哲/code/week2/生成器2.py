@@ -1,5 +1,6 @@
 def factor(max_num):
     # 这是一个函数  用于输出所有小于max_num的质数
+    global factor_list
     factor_list = []
     n = 2
     while n<max_num:
@@ -16,5 +17,6 @@ g=factor(50)
 for i in g:
      print(i)
 
-#print[factor_list]
-
+print(type(g))
+print(g)
+print(factor_list)

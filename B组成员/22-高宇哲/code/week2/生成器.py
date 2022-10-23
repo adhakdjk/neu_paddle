@@ -23,7 +23,7 @@ def factor(max):
         if not find:
                 list.append(n)
                 yield n
-    n=1+n
+        n=1+n
 g=factor(100)
 for m in g:
-    print(n)
+    print(m)
