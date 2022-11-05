@@ -109,7 +109,7 @@ Down :光标下移或转入下一单元
 
 
 # torch.mutilprocessing
-(https://cloud.tencent.com/developer/article/1994697)[https://cloud.tencent.com/developer/article/1994697]
+[https://cloud.tencent.com/developer/article/1994697](https://cloud.tencent.com/developer/article/1994697)
 > 用来多进程处理的
 
 # numpy.flatten()
@@ -123,3 +123,6 @@ array([1, 3, 2, 4, 3, 5])
 
 
 ```
+
+# torch.triu
+[triu用法及代码实例](https://vimsky.com/examples/usage/python-torch.triu-pt.html)
