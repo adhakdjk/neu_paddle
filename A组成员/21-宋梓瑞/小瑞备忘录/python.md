@@ -126,3 +126,26 @@ array([1, 3, 2, 4, 3, 5])
 
 # torch.triu
 [triu用法及代码实例](https://vimsky.com/examples/usage/python-torch.triu-pt.html)
+
+# squeeze( ) 和unsqueeze( )函数功能和使用
+
+
+# zip()
+zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。(注：在python3中返回的是zip对象)
+``` python
+list1 = [1,2,3,4,5]
+list2 = [6,7,8,9,0]
+print([i for i in zip(list1, list2)])
+"""
+result:
+[(1, 6), (2, 7), (3, 8), (4, 9), (5, 0)]
+"""
+```
+
+
+
+
+
+
+
+
