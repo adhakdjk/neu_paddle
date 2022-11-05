@@ -112,3 +112,14 @@ Down :光标下移或转入下一单元
 (https://cloud.tencent.com/developer/article/1994697)[https://cloud.tencent.com/developer/article/1994697]
 > 用来多进程处理的
 
+# numpy.flatten()
+>a.flatten()：a是个数组，a.flatten()就是把a降到一维，默认是按行的方向降 。
+a.flatten().A：a是个矩阵，降维后还是个矩阵，矩阵.A（等效于矩阵.getA()）变成了数组。
+``` python
+a = [[1,3],[2,4],[3,5]]
+a = array(a)
+a.flatten()
+array([1, 3, 2, 4, 3, 5])
+
+
+```
