@@ -128,7 +128,7 @@ array([1, 3, 2, 4, 3, 5])
 [triu用法及代码实例](https://vimsky.com/examples/usage/python-torch.triu-pt.html)
 
 # squeeze( ) 和unsqueeze( )函数功能和使用
-
+[squeeze和unsqueeze理解](https://blog.csdn.net/kuan__/article/details/109209709?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166807606716782390575257%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166807606716782390575257&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-109209709-null-null.142^v63^control,201^v3^control_1,213^v2^t3_esquery_v1&utm_term=unsqueeze&spm=1018.2226.3001.4187)
 
 # zip()
 zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。(注：在python3中返回的是zip对象)
@@ -141,11 +141,11 @@ result:
 [(1, 6), (2, 7), (3, 8), (4, 9), (5, 0)]
 """
 ```
+# register_buffer() 
+self.register_buffer(‘my_buffer’, self.tensor)：my_buffer是名字，str类型；self.tensor是需要进行register登记的张量。这样我们就得到了一个新的张量，这个张量会保存在model.state_dict()中，也就可以随着模型一起通过.cuda()复制到gpu上。
 
+登记过的张量 会自动称为模型的参数，随着模型移动而移动，不会随着梯度进行更新。
 
-
-
-
-
+[https://blog.csdn.net/weixin_46197934/article/details/119518497?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166812892216800184142804%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166812892216800184142804&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-119518497-null-null.142^v63^control,201^v3^control_1,213^v2^t3_esquery_v1&utm_term=.register_buffer&spm=1018.2226.3001.4187](https://blog.csdn.net/weixin_46197934/article/details/119518497?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166812892216800184142804%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166812892216800184142804&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-119518497-null-null.142^v63^control,201^v3^control_1,213^v2^t3_esquery_v1&utm_term=.register_buffer&spm=1018.2226.3001.4187)
 
 
