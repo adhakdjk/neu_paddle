@@ -52,4 +52,30 @@ if __name__=='__main__':
     print("开始划分数据集")
     train_prefix='training'
     test_prefix='testing'
-    train_names=listdir(osp.)
+    train_names=listdir(osp.join(args.data_root,train_prefix,'output'))
+    train_names=list(filter(lambda n: n.endswith('.png'),train_names))
+    test_names=listdir(osp.join(args.data_root,test_prefix,'output'))
+    test_names=list(filter(lambda n: n.endswith('.png'),test_names))
+
+    train_names.sort()
+    test_names.sort()
+    random.shuffle(train_names)
+    len_train=int(len(train_names)*TRAIN_RATION)
+    train_list_path=write_rel_paths("train",train_names[:len_train],args.data_root,train_prefix)
+    val_list_path=write_rel_paths("val",train_names[len_train:],args.data_root,train_prefix)
+    test_list_path=write_rel_paths('test',test_names,args.data_root,test_prefix)
+
+    if args.bin_to_pc:
+        #转换标签文件
+        print("开始转换标签文件")
+        with open(train_list_path,'r') as f1, open(val_list_path,'r') as f2,open(test_list_path,'r') as f3:
+            for line in itertools.chain(f1,f2,f3):
+                p=line.strip().split()[1]
+                binary_to_pseudocolor(osp.join(args.data_root,p))
+    
+    print("开始写入信息/....")
+    with open(osp.join(args.data_root,'label_txt'),'w') as f:
+        for cls in args.labels:
+            f.write(cls+'\n')
+    
+    print ("数据集划分完成")
