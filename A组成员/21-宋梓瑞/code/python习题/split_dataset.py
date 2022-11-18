@@ -6,7 +6,7 @@ import itertools
 from os import listdir
 import numpy as np
 from PIL import Image
-
+import os.path as osp
 RNG_SEED = 56961
 
 #调节参数控制训练集数据的占比
@@ -16,9 +16,9 @@ TRAIN_RATION=0.9
 CLASSES=('background','road',)
  
 
-def write_rel_paths(phase,names,out_dir):
+def write_rel_paths(phase,names,out_dir,prefix):
 
-    tar_path= osp.join(out_dir, phase+'.txt' )
+    tar_path= osp.join(out_dir, phase+'.txt')
     with open(tar_path,'w') as f:
         for name in names:
             f.write(
@@ -45,8 +45,8 @@ if __name__=='__main__':
 
     parser=argparse.ArgumentParser()
     parser.add_argument('--data_root',type=str,default="./")
-    parser.add_argument('--bin_to_pc',action='store_ture', help="二值图转换为伪彩色图像")
-    parser.add_argument('labels',type=str,nargs='+',default=['background','foreground'])
+    parser.add_argument('--bin_to_pc',action='store_true', help="二值图转换为伪彩色图像")
+    parser.add_argument('--labels',type=str,nargs='+',default=['background','foreground'])
     args=parser.parse_args()
 
     print("开始划分数据集")
